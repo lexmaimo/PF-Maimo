@@ -1022,6 +1022,10 @@ footer {
         line-height: 2;
     }
 
+    .item4 {
+        width: 600px;
+    }
+
     .letter {
         font-size: 28px;
     }
