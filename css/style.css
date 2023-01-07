@@ -29,7 +29,7 @@ font-family: 'Quicksand', sans-serif;
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  80px 1fr 0.05fr;
+    grid-template-rows: 80px 1.2fr 0.1fr;
     grid-template-areas: 
     "header"
     "main"
@@ -56,10 +56,10 @@ footer {
 }
 
 .menu-desktop {
-    display: grid;    
+    display: grid;
     width: 100%;
     grid-template-columns: 1.5fr 6fr 1fr;
-    grid-template-rows: 80px;
+    grid-template-rows: 150px;
     grid-template-areas: 
     "logo nav redes";
     justify-content: space-evenly;
@@ -73,11 +73,11 @@ footer {
     grid-area: logo;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .foto-logo {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -90,7 +90,7 @@ nav {
 
 .navbar {
     display: flex;
-    gap: 30px;
+    gap: 80px;
 }
 
 .navbar li {
@@ -106,7 +106,7 @@ nav {
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 26px;
     padding: 10px 15px;
     color: #000000;
 }
@@ -127,14 +127,14 @@ nav {
 }
 
 .fb, .ig {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 /* ---------------------------- banner ---------------------------- */
 .banner {
     width: 100%;
-    height: 550px;
+    height: 950px;
     background-image: url(../assets/img/fondo.png);
     background-position: center;
     background-size: cover;
@@ -149,7 +149,7 @@ nav {
     font-family: 'Playlist';
     font-weight: normal;
     font-style: normal;
-    font-size: 45px;
+    font-size: 65px;
     text-align: center;
     justify-self: end;
 }
@@ -167,8 +167,8 @@ nav {
 }
 
 .mision img, .vision img, .valores img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: auto;
     margin-top: 10px;
@@ -176,24 +176,24 @@ nav {
 }
 
 .about1, .about2, .about3 {
-    width: 250px;
-    height: 250px;
+    width: 650px;
+    height: 650px;
 }
 
 .about1 h2, .about2 h2, .about3 h2 {
-    padding: 10px;
+    padding: 20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 36px;
     text-align: center;
 }
 
 .about1 p, .about2 p, .about3 p {
-    padding: 10px 20px 10px 20px;
+    padding: 50px;
     margin-bottom: 10px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 36px;
     line-height: 1.5;
     text-align: center;
 }
@@ -210,22 +210,22 @@ nav {
 
 .destacados h3 {
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .curso1, .curso2 {
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .foto1 {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 35px 0px 35px 0px;
     order: 3;
     background-image: url(../assets/img/coaching.jpg);
@@ -234,8 +234,8 @@ nav {
 }
 
 .curso1-texto {
-    width: 800px;
-    height: 200px;
+    width: 70%;
+    height: auto;
     text-align: right;
     display: flex;
     flex-flow: column;
@@ -243,8 +243,8 @@ nav {
 }
 
 .foto2 {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 35px 0px 35px 0px;
     background-image: url(../assets/img/manicuria-inicial.jpg);
     background-size: cover;
@@ -252,8 +252,8 @@ nav {
 }
 
 .curso2-texto {
-    width: 800px;
-    height: 200px;
+    width: 70%;
+    height: auto;
     text-align: left;
     display: flex;
     flex-flow: column;
@@ -264,7 +264,7 @@ nav {
     padding: 10px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 28px;
     line-height: 2;
 }
 
@@ -272,7 +272,7 @@ nav {
     padding: 10px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 .curso1-texto a, .curso2-texto a {
@@ -294,12 +294,12 @@ nav {
 
 .reviews h3 {
     width: 100%;
-    padding: 30px;
+    padding: 50px;
     color: #000000;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .reseñas {
@@ -317,8 +317,8 @@ nav {
 }
 
 .op1, .op2, .op3, .op4 {
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
     background-image: url(../assets/img/avatar1.jpg);
     background-size: cover;
@@ -342,18 +342,9 @@ nav {
 }
 
 .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
-    width: 250px;
-    height: 250px;
+    width: 480px;
+    height: 590px;
     text-align: center;
-}
-
-.opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
-    padding: 5px 20px 10px 20px;
-    margin-bottom: 10px;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 .opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
@@ -361,7 +352,16 @@ nav {
     margin-top: 5px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 34px;
+}
+
+.opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 2;
 }
 
 /* ---------------------------- material-mobile ---------------------------- */
@@ -387,7 +387,7 @@ nav {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .caja-contacto {
@@ -417,7 +417,8 @@ nav {
 
 .email-input, .tel-input, .name-input, .lastname-input, .options {
     width: 45vw;
-    height: 25px;
+    height: 50px;
+    margin-bottom: 15px;
 }
 
 .options, .mensaje-input {
@@ -430,7 +431,7 @@ nav {
 }
 
 .options {
-    padding: 3px;
+    padding: 7px;
 }
 
 .btn-input {
@@ -448,7 +449,10 @@ nav {
 .name, .lastname, .mail, .tel, .motivo, .mensaje, .btn-input {
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+}
+
+.name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+    font-size: 28px;
 }
 
 /* -------------------------------------------- SOBRE MI -------------------------------------------- */
@@ -457,7 +461,7 @@ nav {
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: repeat(3);
     grid-template-areas:
     "item1 item1"
@@ -473,10 +477,10 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 20px 50px;
+    padding: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .item2 {
@@ -491,22 +495,22 @@ nav {
     padding: 20px 50px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
-    text-align: left;
+    font-size: 28px;
+    text-align: justify;
     line-height: 2;
 }
 
 .letter {
-    font-size: 26px;
+    font-size: 34px;
 }
 
 .item4 {
-    width: 600px;
+    width: 950px;
     grid-area: item4;
     display: grid;
     align-content: center;
     margin-right: 50px;
-    background-image: url(../assets/img/sobre-mi.jpg);    
+    background-image: url(../assets/img/sobre-mi.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 200px 0px 200px 0px;
@@ -522,19 +526,10 @@ nav {
 .servicios h2 {
     width: 100%;
     text-align: center;
-    padding: 30px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-}
-
-.servicios-caja h3 {
-    width: 100%;
     padding: 50px;
     font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
 }
 
 .servicios p {
@@ -544,7 +539,7 @@ nav {
     margin-top: 10px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 28px;
     line-height: 2;
     text-align: justify;
 }
@@ -554,14 +549,23 @@ nav {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 60px;
+}
+
+.servicios-caja h3 {
+    width: 100%;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
 }
 
 .servicios-fotos {
     width: 100%;
     height: auto;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: 25px;
     justify-content: center;
     align-items: center;
@@ -569,8 +573,8 @@ nav {
 
 .servicios-fotos figure {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 500px;
+    width: 500px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
@@ -609,7 +613,7 @@ nav {
 }
 
 .servicios-fotos figure:hover > .capa2 h3 {
-    margin-top: 30px;
+    margin-top: 150px;
 }
 
 .servicios-fotos figure .capa h3, figure .capa2 h3 {
@@ -624,8 +628,8 @@ nav {
 
 .servicios-fotos figure .capa p {
     color: #000000;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 26px;
+    line-height: 2;
     width: 100%;
     max-width: 220px;
     margin: auto;
@@ -633,7 +637,7 @@ nav {
 }
 
 .capa h3, .capa2 h3 {    
-    padding: 50px 20px;
+    padding: 50px;
 }
 
 .capa p {
@@ -655,10 +659,10 @@ nav {
 .para-vos h2 {
     width: 100%;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .para-vos p {
@@ -667,7 +671,7 @@ nav {
     padding: 10px 50px 50px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 28px;
     line-height: 2;
     text-align: justify;
 }
@@ -678,11 +682,11 @@ nav {
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .video {
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 
@@ -699,10 +703,10 @@ nav {
 .galeria h2 {
     width: 100%;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .fotos-galeria {
@@ -717,8 +721,8 @@ nav {
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
-    width: 400px;
-    height: 600px;
+    width: 700px;
+    height: 900px;
     background-position: center;
     background-size: cover;
 }
@@ -784,27 +788,27 @@ nav {
 
 .contacto h2 {
     width: 100%;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .contacto p {
     width: 100%;
     height: auto;
-    padding: 10px 50px;
+    padding: 50px 100px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 28px;
     line-height: 2;
     text-align: justify;
 }
 
 .fb-contacto, .ig-contacto, .icono-mail {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .mail-contacto {
@@ -814,8 +818,8 @@ nav {
 }
 
 .mail-contacto p {
-    padding: 20px 10px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 28px;
 }
 .linea-contacto {
     background-color: #000000;
@@ -833,7 +837,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /* ---------------------------- footer ---------------------------- */
@@ -847,6 +851,7 @@ footer {
 .redes-footer {
     width: 100%;
     height: 100px;
+    padding-top: 20px;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -855,8 +860,8 @@ footer {
 }
 
 .fb-footer, .ig-footer {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .lineas {
@@ -866,7 +871,7 @@ footer {
 }
 
 .logo-footer {
-    width: 150px;
+    width: 250px;
     height: auto;
     display: block;
     margin: auto;
@@ -879,298 +884,15 @@ footer {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 
 /* ------------------------------------------- responsive ------------------------------------------- */
-@media (min-width: 2000px) {
+@media (max-width: 1999px){
     .container {
-        grid-template-rows: 80px 1.2fr 0.1fr;
-    }   
-
-    .menu-desktop {
-        grid-template-rows: 150px;
-    }
-    
-    .logo {
-        align-items: center;
-    }
-    
-    .foto-logo {
-        width: 250px;
-        height: auto;
-    }
-    
-    .navbar {
-        display: flex;
-        gap: 80px;
-    }
-    
-    .navbar li a {
-        font-size: 26px;
-    }
-    
-    .fb, .ig {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .banner {
-        height: 950px;
-    }
-    
-    .banner-texto {
-        font-size: 65px;
-    }
-    
-    .mision img, .vision img, .valores img {
-        width: 300px;
-        height: 300px;
-    }
-    
-    .about1, .about2, .about3 {
-        width: 550px;
-        height: 550px;
-    }
-    
-    .about1 h2, .about2 h2, .about3 h2 {
-        padding: 20px;
-        font-size: 36px;
-    }
-    
-    .about1 p, .about2 p, .about3 p {
-        font-size: 28px;
-        line-height: 2;
-    }
-    
-    .destacados h3 {
-        padding: 50px;
-        font-size: 36px;
-    }
-    
-    .curso1, .curso2 {
-        margin-bottom: 30px;
-    }
-    
-    .foto1, .foto2 {
-        width: 400px;
-        height: 400px;
-    }
-    
-    .curso1-texto, .curso2-texto {
-        width: 70%;
-        height: auto;
-    }
-    
-    .curso1-texto p, .curso2-texto p {
-        font-size: 28px;
-        line-height: 2;
-    }
-    
-    .curso1-texto h4, .curso2-texto h4 {
-        font-size: 32px;
-    }
-    
-    .reviews {
-        width: 100%;
-        height: auto;
-        background-color: #FFFFFF;
-    }
-    
-    .reviews h3 {
-        padding: 50px;
-        font-size: 36px;
-    }
-    
-    .op1, .op2, .op3, .op4 {
-        width: 350px;
-        height: 350px;
-    }
-    
-    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
-        width: 480px;
-        height: 590px;
-    }
-    
-    .opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
-        font-size: 28px;
-        line-height: 2;
-    }
-    
-    .opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
-        font-size: 34px;
-    }
-    
-    .contacto-index h3 {
-        font-size: 36px;
-    }
-    
-    .email-input, .tel-input, .name-input, .lastname-input, .options {
-        height: 50px;
-        margin-bottom: 15px;
-    }
-    
-    .options, .mensaje-input {
-        width: 90vw;
-    }
-    
-    .options {
-        padding: 7px;
-    }
-    
-    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
-        font-size: 28px;
-    }
-    
-    .sobre-mi {
-        grid-template-columns: 1.5fr 1fr;
-    }
-    
-    .item1 {
-        padding: 50px;
-        font-size: 40px;
-    }
-    
-    .item2, .item3 {
-        padding: 20px 50px;
-        font-size: 28px;
-        text-align: justify;
-    }
-    
-    .letter {
-        font-size: 34px;
-    }
-    
-    .item4 {
-        width: 950px;
-    }
-    
-    .servicios h2 {
-        padding: 50px;
-        font-size: 40px;
-    }
-
-    .servicios-caja {
-        margin-bottom: 60px;
-    }
-    
-    .servicios-caja h3 {
-        font-size: 36px;
-    }
-    
-    .servicios p {
-        font-size: 28px;
-    }
-    
-    .servicios-fotos {
-        flex-flow: row wrap;
-    }
-    
-    .servicios-fotos figure {
-        height: 500px;
-        width: 500px;
-    }
-    
-    .servicios-fotos figure .capa p {
-        font-size: 26px;
-        line-height: 2;
-    }
-    
-    .capa h3, .capa2 h3 {    
-        padding: 50px;
-    }
-    
-    .para-vos h2 {
-        padding: 50px;
-        font-size: 40px;
-    }
-    
-    .para-vos p {
-        font-size: 28px;
-    }
-    
-    .videos {
-        margin-bottom: 50px;
-    }
-    
-    .video {
-        width: 500px;
-    }
-    
-    .galeria h2 {
-        padding: 50px;
-        font-size: 40px;
-    }
-    
-    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
-        width: 700px;
-        height: 900px;
-    }
-    
-    .contacto {
-        width: 100%;
-        height: auto;
-        background-color: #D7D2D2;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-    
-    .contacto h2 {
-        padding: 50px;
-        font-size: 40px;
-    }
-    
-    .contacto p {
-        padding: 50px 100px;
-        font-size: 28px;
-    }
-    
-    .fb-contacto, .ig-contacto, .icono-mail {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .mail-contacto p {
-        font-size: 28px;
-        padding: 15px;
-    }
-    .linea-contacto {
-        width: 45vw;
-    }
-    
-    .caja-contacto2 {
-        margin-bottom: 40px;
-    }
-    
-    .redes-footer {
-        padding-top: 20px;
-    }
-    
-    .fb-footer, .ig-footer {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .lineas {
-        width: 35vw;
-    }
-    
-    .logo-footer {
-        width: 250px;
-    }
-    
-    .footer-texto h2, .footer-texto h3 {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-}
-
-/* ------------------------------------------- responsive ------------------------------------------- */
-@media (min-width: 1440px) and (max-width: 1999px){
-    .container {
-        grid-template-rows:  100px 1fr 0.1fr;
+        grid-template-rows:  100px 1fr 0.05fr;
         ;
     }
 
@@ -1180,10 +902,6 @@ footer {
 
     .menu-desktop {
         grid-template-rows: 100px;
-    }
-    
-    .logo {
-        align-items: center;
     }
     
     .foto-logo {
@@ -1206,10 +924,6 @@ footer {
     .banner {
         height: 750px;
     }
-    
-    .banner-texto {
-        font-size: 65px;
-    }
         
     .mision img, .vision img, .valores img {
         width: 250px;
@@ -1218,7 +932,7 @@ footer {
     
     .about1, .about2, .about3 {
         width: 400px;
-        height: 375px;
+        height: 380px;
     }
     
     .about1 h2, .about2 h2, .about3 h2 {
@@ -1228,10 +942,10 @@ footer {
     .about1 p, .about2 p, .about3 p {
         font-size: 22px;
         line-height: 1.5;
+        padding: 0px 10px;
     }
     
     .destacados h3 {
-        padding: 50px;
         font-size: 28px;
     }
         
@@ -1346,7 +1060,11 @@ footer {
     .servicios-fotos figure .capa p {
         font-size: 18px;
     }
-    
+
+    .capa h3 {    
+        padding: 30px 50px;
+    }
+
     .capa p {
         text-align: center;
         padding: 0;
@@ -1376,6 +1094,10 @@ footer {
         font-size: 16px;
         line-height: 2;
     }
+
+    .options {
+        padding: 7px;
+    }
     
     .fb-contacto, .ig-contacto, .icono-mail {
         width: 40px;
@@ -1386,35 +1108,275 @@ footer {
         padding: 20px 10px;
         font-size: 20px;
     }
+}
 
-    .linea-contacto {
-        width: 45vw;
+/* ------------------------------------------ responsive ------------------------------------------ */
+@media (max-width: 1439px) {
+    .container {
+        grid-template-rows:  80px 1fr 0.05fr;
     }
-    
-    .caja-contacto2 {
-        height: auto;
+    .menu-mobile {
+        display: none;
     }
 
-    .redes-footer {
-        padding-top: 20px;
+    .menu-desktop {
+        grid-template-rows: 80px;
     }
-    
-    .fb-footer, .ig-footer {
-        width: 70px;
-        height: 70px;
+
+    .logo {
+        align-items: flex-end;
     }
-    
-    .logo-footer {
+
+    .foto-logo {
+        width: 150px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+
+    .navbar li a {
+        font-size: 18px;
+    }
+
+    .fb, .ig {
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner {
+        height: 550px;
+    }
+
+    .banner-texto {
+        font-size: 45px;
+    }
+
+    .mision img, .vision img, .valores img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about1, .about2, .about3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about1 h2, .about2 h2, .about3 h2 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .about1 p, .about2 p, .about3 p {
+        padding: 10px 20px 10px 20px;
+        font-size: 14px;
+    }
+
+    .destacados h3 {
+        font-size: 24px;
+        padding: 30px;
+    }
+
+    .curso1, .curso2 {
+        margin-bottom: 20px;
+    }
+
+    .foto1, .foto2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .curso1-texto, .curso2-texto {
+        width: 800px;
+        height: 200px;
+    }
+
+    .curso1-texto h4, .curso2-texto h4 {
+        font-size: 20px;
+    }
+
+    .curso1-texto p, .curso2-texto p {
+        font-size: 14px;
+    }
+
+    .reviews h3 {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .op1, .op2, .op3, .op4 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
+        font-size: 20px;
+    }
+
+    .contacto-index h3 {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        height: 30px;
+    }
+
+    .options, .mensaje-input {
+        width: 90vw;
+    }
+
+    .options {
+        padding: 4px;
+    }
+
+    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+        font-size: 14px;
+    }
+
+    .sobre-mi {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .item1 {
+        padding: 30px 20px 50px;
+        font-size: 30px;
+    }
+
+    .item2, .item3 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .letter {
+        font-size: 26px;
+    }
+
+    .item4 {
+        width: 600px;
+    }
+
+    .servicios h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .servicios p {
+        font-size: 14px;
+    }
+
+    .servicios-caja {
+        margin-bottom: 35px;
+    }
+
+    .servicios-caja h3 {
+        font-size: 24px;
+    }
+
+    .servicios-fotos figure {
+        height: 250px;
         width: 250px;
     }
-    
+
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 40px;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 30px;
+    }
+
+    .servicios-fotos figure .capa p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .capa h3 {    
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 50px 20px;
+    }
+
+    .para-vos h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .para-vos p {
+        font-size: 14px;
+    }
+
+    .videos {
+        margin-bottom: 30px;
+    }
+
+    .video {
+        width: 300px;
+    }
+
+    .galeria h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+        width: 400px;
+        height: 600px;
+    }
+
+    .contacto h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .contacto p {
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mail-contacto p {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .caja-contacto2 {
+        margin-bottom: 30px;
+    }
+
+    .fb-footer, .ig-footer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-footer {
+        width: 150px;
+    }
+
     .footer-texto h2, .footer-texto h3 {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
 /* ------------------------------------------ responsive ------------------------------------------ */
-@media (min-width: 1024px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     
     .banner-texto {
         width: 35%;
@@ -1524,13 +1486,13 @@ footer {
         margin-right: 40px;
     }
     
-    .servicios-caja h3 {
-        font-size: 26px;
-    }
-    
     .servicios p {
         font-size: 16px;
         line-height: 2;
+    }
+    
+    .servicios-caja h3 {
+        font-size: 26px;
     }
     
     .servicios-fotos {
@@ -1542,13 +1504,25 @@ footer {
         height: 300px;
         width: 300px;
     }
+
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 60px;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 50px;
+    }
     
     .servicios-fotos figure .capa p {
         font-size: 16px;
     }
 
     .capa h3, .capa2 h3 {    
-        padding: 50px 20px;
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 50px;
     }
     
     .para-vos p {
@@ -1579,7 +1553,7 @@ footer {
 }
 
 /* ------------------------------------------ responsive ------------------------------------------ */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .container {
         grid-template-rows: 70px 1fr 0.05fr;
     }
@@ -1707,7 +1681,8 @@ footer {
     }
 
     .about1, .about2, .about3 {
-        height: 190px;
+        width: 200px;
+        height: 270px;
     }
 
     .about1 h2, .about2 h2, .about3 h2 {
@@ -1749,9 +1724,15 @@ footer {
     .opinion4 {
         display: none;
     }
+
+    .op1, .op2, .op3 {
+        width: 150px;
+        height: 150px;
+    }
     
     .opinion1-texto, .opinion2-texto, .opinion3-texto {
-        height: 250px;
+        width: 250px;
+        height: 240px;
     }
     
     .opinion1 p, .opinion2 p, .opinion3 p {
@@ -1765,9 +1746,17 @@ footer {
     
     .contacto-index h3 {
         font-size: 20px;
+    }    
+
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        height: 25px;
     }
 
-    .name, .lastname, .mail, .tel, .motivo, .mensaje {
+    .options {
+        padding: 4px;
+    }
+
+    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
         font-size: 12px;
     }
         
@@ -1799,23 +1788,44 @@ footer {
         font-size: 20px;
     }
 
-    .servicios h3 {
+    .servicios p {
+        font-size: 12px;
+    }
+
+    .servicios.caja h3 {
         padding: 30px;
         font-size: 20px;
     }
-
-    .servicios p {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
+    
     .servicios-fotos {
-        height: auto;
         flex-flow: row wrap;
+        gap: 30px;
+    }
+    
+    .servicios-fotos figure {
+        height: 250px;
+        width: 250px;
     }
 
-    .capa h3, .capa2 h3 {
-        padding: 50px 50px 20px 50px;
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 20px;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 40px;
+    }
+    
+    .servicios-fotos figure .capa p {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+
+    .capa h3 {
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 30px;
     }
     
     .para-vos h2 {
@@ -1835,12 +1845,6 @@ footer {
         font-size: 20px;
     }
 
-    .fotos-galeria {
-        flex-flow: row wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
     .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
         width: 350px;
         height: 550px;
@@ -1858,10 +1862,6 @@ footer {
     .fb-contacto, .ig-contacto, .icono-mail {
         width: 25px;
         height: 25px;
-    }
-
-    .linea-contacto {
-        width: 45vw;
     }
             
     .fb-footer, .ig-footer {
@@ -2208,8 +2208,12 @@ footer {
         font-size: 20px;
     }
     
-    .capa h3, .capa2 h3 {
-        padding: 50px 50px 20px 50px;
+    .capa h3 {
+        padding: 20px 50px;
+    }
+    
+    .capa2 h3 {
+        padding: 50px;
     }
     
     .para-vos h2 {
@@ -2269,27 +2273,13 @@ footer {
     .mail-contacto p {
         padding: 20px 10px;
     }
+
     .linea-contacto {
-        background-color: #000000;
         width: 75vw;
         height: 3px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .caja-contacto2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
     footer {
-        height: auto;
         padding-bottom: 10px;
     }
 
