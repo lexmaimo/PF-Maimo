@@ -176,7 +176,7 @@ nav {
 }
 
 .about1, .about2, .about3 {
-    width: 650px;
+    width: 640px;
     height: 650px;
 }
 
@@ -264,7 +264,7 @@ nav {
     padding: 10px;
     font-family: 'Libre Baskerville', serif;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 2;
 }
 
@@ -272,7 +272,7 @@ nav {
     padding: 10px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .curso1-texto a, .curso2-texto a {
@@ -631,7 +631,7 @@ nav {
     font-size: 26px;
     line-height: 2;
     width: 100%;
-    max-width: 220px;
+    max-width: 450px;
     margin: auto;
     transition: all 500ms ease-out;
 }
@@ -931,7 +931,7 @@ footer {
     }
     
     .about1, .about2, .about3 {
-        width: 400px;
+        width: 380px;
         height: 380px;
     }
     
@@ -1062,11 +1062,12 @@ footer {
     }
     
     .servicios-fotos figure .capa p {
-        font-size: 18px;
+        font-size: 16px;
+        max-width: 250px;
     }
 
     .capa h3 {    
-        padding: 30px 50px;
+        padding: 25px 50px;
     }
 
     .capa p {
@@ -1293,7 +1294,7 @@ footer {
     }
 
     .servicios-fotos figure:hover > .capa h3 {
-        margin-top: 40px;
+        margin-top: 0;
     }
 
     .servicios-fotos figure:hover > .capa2 h3 {
@@ -1301,8 +1302,9 @@ footer {
     }
 
     .servicios-fotos figure .capa p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.5;
+        max-width: 200px;
     }
 
     .capa h3 {    
@@ -1510,7 +1512,7 @@ footer {
     }
 
     .servicios-fotos figure:hover > .capa h3 {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .servicios-fotos figure:hover > .capa2 h3 {
@@ -1519,6 +1521,7 @@ footer {
     
     .servicios-fotos figure .capa p {
         font-size: 16px;
+        max-width: 250px;
     }
 
     .capa h3, .capa2 h3 {    
@@ -1685,7 +1688,7 @@ footer {
     }
 
     .about1, .about2, .about3 {
-        width: 200px;
+        width: 220px;
         height: 270px;
     }
 
@@ -1812,7 +1815,7 @@ footer {
     }
 
     .servicios-fotos figure:hover > .capa h3 {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .servicios-fotos figure:hover > .capa2 h3 {
