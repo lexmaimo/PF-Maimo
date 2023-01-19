@@ -1,0 +1,1523 @@
+@media (max-width: 1999px) {
+    .container {
+        grid-template-rows:  100px 1fr 0.05fr;
+        .menu-mobile {
+            display: none;
+        }
+        .menu-desktop {
+            grid-template-rows: 100px;
+            .logo {
+                .foto-logo {
+                    width: 180px;
+                }
+            }
+            nav {
+                .navbar {
+                    gap: 50px;
+                    li {
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            .redes {
+                .fb, .ig {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        .banner {
+            height: 750px;
+        }
+        .company {
+            .mision, .vision, .valores {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+                .about1, .about2, .about3 {
+                    width: 380px;
+                    height: 380px;
+                    h2 {
+                        font-size: 28px;
+                    }
+                    p {
+                        font-size: 22px;
+                        line-height: 1.5;
+                        padding: 0px 10px;
+                    }
+                }
+            }
+        }
+        .destacados {
+            h3 {
+                font-size: 28px;
+            }
+            .curso1, .curso2 {
+                width: 100%;
+                height: 300px;
+                .foto1 {
+                    width: 300px;
+                    height: 300px;
+                }
+                .curso1-texto {
+                    width: 60%;
+                    height: 300px;
+                    h4 {
+                        font-size: 26px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .foto2 {
+                    width: 300px;
+                    height: 300px;
+                }        
+                .curso2-texto {
+                    width: 60%;
+                    height: 300px;
+                    h4 {
+                        font-size: 26px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .reviews {
+            h3 {
+                padding: 50px;
+                font-size: 28px;
+            }
+            .reseñas {
+                .opinion1, .opinion2, .opinion3, .opinion4 {
+                    .op1, .op2, .op3, .op4 {
+                        width: 250px;
+                        height: 250px;
+                    }
+                    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+                        width: 300px;
+                        height: 405px;
+                        h4 {
+                            font-size: 26px;
+                        }
+                        p {
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+        .contacto-index {
+            h3 {
+                padding: 50px;
+                font-size: 28px;
+            }
+            .caja-contacto {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 40px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 20px;
+                    }
+                }        
+                .btn-input {
+                    font-size: 20px;
+                }
+            }
+        }
+        .sobre-mi {
+            .item1 {
+                font-size: 32px;
+            }
+            .item2, .item3 {
+                font-size: 16px;
+            }
+            .letter {
+                font-size: 28px;
+            }
+            .item4 {
+                width: 600px;
+            }
+        }
+        .servicios {
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                padding: 10px 100px 10px;
+                font-size: 18px;
+            }
+            .servicios-caja {
+                margin-bottom: 50px;
+                h3 {
+                    font-size: 26px;
+                }
+                .servicios-fotos {
+                    figure {
+                        @include medidas (400px, 400px);
+                        &:hover > .capa h3 {
+                            margin-top: 30px;
+                        }
+                        &:hover > .capa2 h3 {
+                            margin-top: 90px;
+                        }
+                        .capa h3 {
+                            font-size: 32px;
+                            padding: 25px 50px;
+                        }
+                        .capa p {
+                            font-size: 20px;
+                            max-width: 350px;
+                        }
+                        .capa2 h3 {
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        .para-vos {
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                padding: 10px 100px 50px;
+                font-size: 16px;
+            }
+            .videos {
+                .video {
+                    width: 400px;
+                }
+            }
+        }
+        .galeria {
+            h2 {
+                font-size: 32px;
+            }
+            .fotos-galeria {
+                .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+                    width: 450px;
+                    height: 650px;
+                }
+            }
+        }
+        .contacto {
+            h2 {
+                font-size: 32px;
+            }
+            .fb-contacto, .ig-contacto, .icono-mail {
+                width: 40px;
+                height: 40px;
+            }
+            .mail-contacto {
+                p {
+                    padding: 20px 10px;
+                    font-size: 20px;
+                }
+            }
+            p {
+                padding: 10px 70px;
+                font-size: 16px;
+            }
+            .caja-contacto2 {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 40px;
+                    }
+                    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        padding: 8px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 20px;
+                    }
+                }
+                .btn-input {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .container {
+        grid-template-rows:  80px 1fr 0.05fr;
+        .menu-mobile {
+            display: none;
+        }
+        .menu-desktop {
+            grid-template-rows: 80px;
+            .logo {
+                align-items: flex-end;
+                .foto-logo {
+                    width: 150px;
+                }
+            }
+            nav {
+                .navbar {
+                    gap: 30px;
+                    li {
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .redes {
+                .fb, .ig {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .banner {
+            height: 550px;
+            .banner-texto {
+                font-size: 45px;
+            }
+        }
+        .company {
+            .mision, .vision, .valores {
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+                .about1, .about2, .about3 {
+                    width: 280px;
+                    height: 280px;
+                    h2 {
+                        padding: 10px;
+                        font-size: 20px;
+                    }
+                    p {
+                        padding: 10px 20px 10px 20px;
+                        font-size: 14px;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+        .destacados {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .curso1, .curso2 {
+                height: 200px;
+                margin: 20px 0px;
+                .foto1 {
+                    width: 200px;
+                    height: 200px;
+                }
+                .curso1-texto {
+                    width: 70%;
+                    height: auto;
+                    h4 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .foto2 {
+                    width: 200px;
+                    height: 200px;
+                }        
+                .curso2-texto {
+                    width: 70%;
+                    height: auto;
+                    h4 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .reviews {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .reseñas {
+                .opinion1, .opinion2, .opinion3, .opinion4 {
+                    .op1, .op2, .op3, .op4 {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+                        width: 250px;
+                        height: 250px;
+                        h4 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+        .contacto-index {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .caja-contacto {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 35px;
+                    }
+                    .options {
+                        padding: 7px;
+                    }
+                    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        padding: 5px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 16px;
+                    }
+                }        
+                .btn-input {
+                    font-size: 16px;
+                }
+            }
+        }
+        .sobre-mi {
+            grid-template-columns: 2fr 1fr;
+            .item1 {
+                padding: 30px 20px 50px;
+                font-size: 30px;
+            }
+            .item2, .item3 {
+                font-size: 16px;
+                text-align: left;
+            }
+            .letter {
+                font-size: 26px;
+            }
+            .item4 {
+                width: 600px;
+            }
+        }
+        .servicios {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .servicios-caja {
+                margin-bottom: 35px;
+                h3 {
+                    font-size: 24px;
+                }
+                .servicios-fotos {
+                    figure {
+                        @include medidas (300px, 300px);
+                        &:hover > .capa h3 {
+                            margin-top: 30px;
+                        }
+                        &:hover > .capa2 h3 {
+                            margin-top: 40px;
+                        }
+                        .capa2 h3 {
+                            padding: 50px 20px;
+                        }
+                        .capa h3 {
+                            padding: 20px;
+                        }
+                        .capa p {
+                            font-size: 14px;
+                            line-height: 1.5;
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+        .para-vos {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            p {
+                padding: 10px 50px 50px;
+                font-size: 16px;
+            }
+            .videos {
+                margin-bottom: 30px;
+                .video {
+                    width: 300px;
+                }
+            }
+        }
+        .galeria {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            .fotos-galeria {
+                .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+                    width: 400px;
+                    height: 600px;
+                }
+            }
+        }
+        .contacto {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            .fb-contacto, .ig-contacto, .icono-mail {
+                width: 30px;
+                height: 30px;
+            }
+            .mail-contacto {
+                p {
+                    padding: 20px 10px;
+                    font-size: 16px;
+                }
+            }
+            p {
+                padding: 10px 50px;
+                font-size: 16px;
+            }
+            .caja-contacto2 {
+                margin-bottom: 30px;
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 35px;
+                    }
+                    .options {
+                        padding: 7px;
+                    }
+                    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        padding: 5px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 16px;
+                    }
+                }
+                .btn-input {
+                    font-size: 16px;
+                }
+            }
+        }
+        footer {
+            .redes-footer {
+                .fb-footer, .ig-footer {
+                    @include medidas (50px, 50px);
+                }
+            }   
+            .logo-footer {
+                width: 150px;
+            }    
+            .footer-texto {
+                h2, h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        grid-template-rows:  80px 1fr 0.05fr;
+        .menu-mobile {
+            display: none;
+        }    
+        .menu-desktop {
+            grid-template-rows: 80px;
+            .logo {
+                .foto-logo {
+                    width: 150px;
+                }
+            }
+            nav {
+                .navbar {
+                    gap: 30px;
+                        a {
+                            font-size: 18px;
+                            }
+                }
+            }
+            .redes {
+                .fb, .ig {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .banner {
+            height: 550px;
+            .banner-texto {
+                width: 40%;
+                font-size: 45px;
+            }
+        }
+        .company {
+            .mision, .vision, .valores {
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+                .about1, .about2, .about3 {
+                    width: 280px;
+                    height: 290px;
+                    h2 {
+                        padding: 10px;
+                        font-size: 20px;
+                    }
+                    p {
+                        padding: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .destacados {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .curso1, .curso2 {
+                height: 200px;
+                margin-bottom: 20px;
+                .foto1 {
+                    @include medidas (200px, 200px);
+                }
+                .curso1-texto {
+                    @include medidas (70%, auto);
+                    h4 {
+                        padding: 5px;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .foto2 {
+                    @include medidas (200px, 200px);
+                }        
+                .curso2-texto {
+                    @include medidas (70%, auto);
+                    h4 {
+                        padding: 5px;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .btn-dest {
+                    display: none;
+                }
+            }
+        }
+        .reviews {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .reseñas {
+                .opinion1, .opinion2, .opinion3, .opinion4 {
+                    .op1, .op2, .op3, .op4 {
+                        @include medidas (150px, 150px);
+                    }
+                    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+                        @include medidas (250px, 310px);
+                        h4 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 14px;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+        .contacto-index {
+            h3 {
+                padding: 30px;
+                font-size: 24px;
+            }
+            .caja-contacto {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 30px;
+                    }
+                    .options {
+                        padding: 5px;
+                    }      
+                    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        padding: 4px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 14px;
+                    }
+                }        
+                .btn-input {
+                    font-size: 14px;
+                }
+            }
+        }
+        .sobre-mi {
+            grid-template-columns: 2fr 1fr;
+            .item1 {
+                padding: 30px 20px 50px;
+                font-size: 30px;
+            }
+            .item2, .item3 {
+                padding: 20px 50px;
+                text-align: left;
+                font-size: 14px;
+            }
+            .letter {
+                font-size: 24px;
+            }
+            .item4 {
+                width: 600px;
+            }
+        }
+        .servicios {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .servicios-caja {
+                margin-bottom: 35px;
+                h3 {
+                    font-size: 24px;
+                }
+                .servicios-fotos {
+                    figure {
+                        @include medidas (250px, 250px);
+                        position: relative;
+                        &:hover > .capa h3 {
+                            margin-top: 10px;
+                        }
+                        &:hover > .capa2 h3 {
+                            margin-top: 70px;
+                        }
+                        .capa h3, .capa2 h3 {
+                            font-size: 24px;
+                            padding: 10px;
+                        }
+                        .capa p {
+                            font-size: 14px;
+                            line-height: 1.5;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .para-vos {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .videos {
+                .video {
+                    width: 350px;
+                }
+            }
+        }
+        .galeria {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            .fotos-galeria {
+                .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+                    @include medidas (400px, 600px);
+                }
+            }
+        }
+        .contacto {
+            h2 {
+                padding: 30px;
+                font-size: 30px;
+            }
+            .fb-contacto, .ig-contacto, .icono-mail {
+                @include medidas (30px, 30px);
+            }
+            .mail-contacto {
+                p {
+                    padding: 15px;
+                    font-size: 16px;
+                }
+            }
+            p {
+                padding: 10px 50px 50px;
+                font-size: 14px;
+            }
+            .caja-contacto2 {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 30px;
+                    }
+                    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input, .options {
+                        padding: 5px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 14px;
+                    }
+                }
+                .btn-input {
+                    font-size: 14px;
+                }
+            }
+        }
+        footer {
+            .redes-footer {
+                .fb-footer, .ig-footer {
+                    @include medidas (50px, 50px);
+                }
+            }   
+            .logo-footer {
+                width: 150px;
+            }    
+            .footer-texto {
+                h2, h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        grid-template-rows: 70px 1fr 0.05fr;
+        .menu-desktop {
+            display: none;
+        }
+        .menu-mobile {
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: $color-principal;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            #check {
+                display: none;
+                &:checked ~ ul{
+                    left: 0;
+                }
+            }
+            .check-btn {
+                @include flex (unset, flex-start, center);
+                padding-left: 12px;
+                .icono-menu {
+                    @include medidas (24px, 24px);
+                }
+            }
+            .mobile-navbar {
+                @include medidas (100%, 500px);
+                background-color: $color-mobile;
+                margin-top: 70px;
+                padding: 50px;
+                @include flex (column, center, center);
+                text-align: center;
+                gap: 30px;
+                list-style: none;
+                position: fixed;
+                transition: all 0.5s;
+                left: -100%;
+                li{
+                    @include flex (unset, center, center);
+                    @include medidas (200px, 50px);
+                    box-shadow: 6px 6px 30px 3px $box-shadow;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $color-terciario;
+                        transform:scale(1.1);
+                    }
+                    a{
+                        @include flex (unset, center, center);
+                        border-radius: 20px;
+                        @include medidas (100%, 100%);
+                        text-decoration: none;
+                        color: $color-secundario;
+                        font-family: $tipografia-secundaria;
+                        font-weight: normal;
+                        font-size: 18px;
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                }        
+            }
+            .logo-marca {
+                height: 70px;
+                justify-self: center;
+                .logo-mobile {
+                    height: 70px;
+                }
+            }
+        }
+        .banner {
+            height: 480px;
+            .banner-texto {
+                width: 35%;
+                padding: 40px;
+                font-size: 35px;
+            }
+        }
+        .company {
+            padding-bottom: 20px;
+            .mision, .vision, .valores {
+                img {
+                    @include medidas (100px, 100px);
+                }
+                .about1, .about2, .about3 {
+                    @include medidas (240px, 240px);
+                    h2 {
+                        font-size: 18px;
+                        padding: 0px;
+                    }
+                    p {
+                        font-size: 12px;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+        .destacados {
+            h3 {
+                font-size: 20px;
+                padding: 30px;
+            }
+            .curso1, .curso2 {
+                height: 230px;
+                margin: 20px 0px;
+                .foto1 {
+                    @include medidas (230px, 230px);
+                }
+                .curso1-texto {
+                    @include medidas (65%, auto);
+                    h4 {
+                        padding: 5px;
+                        font-size: 16px;
+                    }
+                    p {
+                        padding: 0px 5px;
+                        font-size: 14px;
+                    }
+                }
+                .foto2 {
+                    @include medidas (230px, 230px);
+                }        
+                .curso2-texto {
+                    @include medidas (65%, auto);
+                    h4 {
+                        padding: 5px;
+                        font-size: 16px;
+                    }
+                    p {
+                        padding: 0px 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .reviews {
+            h3 {
+                font-size: 20px;
+                padding: 30px;
+            }
+            .reseñas {
+                .opinion1, .opinion2, .opinion3 {
+                    .op1, .op2, .op3 {
+                        @include medidas (150px, 150px);
+                    }
+                    .opinion1-texto, .opinion2-texto, .opinion3-texto {
+                        @include medidas (250px, 250px);
+                        h4 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 2;
+                        }
+                    }
+                }
+                .opinion4 {
+                    display: none;
+                }
+            }
+        }
+        .contacto-index {
+            h3 {
+                font-size: 20px;
+            }
+            .caja-contacto {
+                .row1, .row2, .row3, .row4 {
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 25px;
+                    }
+                    .options {
+                        padding: 4px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 12px;
+                    }
+                }
+                .btn-input {
+                    font-size: 12px;
+                }
+            }
+        }
+        .sobre-mi {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "item1 item1"
+            "item2 item2"
+            "item3 item4"
+            ;
+            .item1 {
+                font-size: 28px;
+            }
+            .item2, .item3 {
+                font-size: 12px;
+                text-align: justify;
+            }
+            .letter {
+                font-size: 26px;
+            }
+            .item4 {
+                width: 350px;
+                justify-self: center;
+                background-position: top;
+            }
+        }
+        .servicios {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .servicios-caja {
+                h3 {
+                    padding: 30px;
+                    font-size: 20px;
+                }
+                .servicios-fotos {
+                    gap: 30px;
+                    figure {
+                        @include medidas (250px, 250px);
+                        &:hover > .capa h3 {
+                            margin-top: 10px;
+                        }
+                        &:hover > .capa2 h3 {
+                            margin-top: 60px;
+                        }
+                        .capa2 h3 {
+                            padding: 20px;
+                        }
+                        .capa p {
+                            font-size: 14px;
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+        .para-vos {
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 2;
+            }
+            .videos {
+                flex-flow: row wrap;
+                .video {
+                    width: 250px;
+                }
+            }
+        }
+        .galeria {
+            h2 {
+                font-size: 20px;
+            }
+            .fotos-galeria {
+                .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+                    @include medidas (300px, 500px);
+                }
+            }
+        }
+        .contacto {
+            h2 {
+                font-size: 20px;
+            }
+            .fb-contacto, .ig-contacto, .icono-mail {
+                @include medidas (25px, 25px);
+            }
+            .mail-contacto p {
+                padding: 20px 10px;
+            }
+            .linea-contacto {
+                @include medidas (75vw, 3px);
+            }
+            p {
+                padding: 10px 30px;
+                font-size: 12px;
+                line-height: 2;
+            }
+            .row1, .row2, .row3, .row4 {
+                .email-input, .tel-input, .name-input, .lastname-input, .options {
+                    height: 25px;
+                }
+                .options {
+                    padding: 4px;
+                }
+                .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                font-size: 12px;
+                }
+            }
+            .btn-input {
+                font-size: 12px;
+            }
+        }
+        footer {
+            padding-bottom: 10px;
+            .redes-footer {
+                height: auto;
+                padding: 20px 0px 10px 0px;
+                gap: 10px;
+                .fb-footer, .ig-footer {
+                    @include medidas (40px, 40px);
+                }
+                .lineas {
+                    width: 30vw;
+                }
+            }        
+            .logo-footer {
+                width: 150px;
+            }        
+            .footer-texto {
+                h2, h3 {
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        grid-template-rows: 50px 1.6fr 0.05fr;
+        .menu-desktop {
+            display: none;
+        }        
+        .menu-mobile {
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: $color-principal;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            #check {
+                display: none;
+                &:checked ~ ul{
+                    left: 0;
+                }
+            }
+            .check-btn {
+                @include flex (unset, flex-start, center);
+                padding-left: 12px;
+                .icono-menu {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .mobile-navbar {
+                @include medidas (100%, 450px);
+                background-color: $color-mobile;
+                margin-top: 50px;
+                padding: 50px;
+                @include flex (column, center, center);
+                text-align: center;
+                gap: 30px;
+                list-style: none;
+                position: fixed;
+                transition: all 0.5s;
+                left: -100%;
+                li{
+                    @include flex (unset, center, center);
+                    @include medidas (200px, 50px);
+                    box-shadow: 6px 6px 30px 3px $box-shadow;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $color-terciario;
+                        transform:scale(1.1);
+                    }
+                    a{
+                        @include medidas (100%, 100%);
+                        @include flex (column, center, center);
+                        @include title (unset, unset, unset, $tipografia-secundaria, normal, 14px);
+                        text-decoration: none;
+                        color: $color-secundario;
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                }        
+            }
+            .logo-marca {
+                height: 50px;
+                justify-self: center;
+                .logo-mobile {
+                    height: 50px;
+                }
+            }
+        }        
+        .banner {
+            height: 250px;
+            .banner-texto {
+                width: 30%;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }    
+        .company {
+            display: none;
+        }    
+        .destacados {
+            padding-bottom: 0px;
+            h3 {
+                font-size: 18px;
+                padding: 30px 30px 10px 30px;
+            }
+            .curso1, .curso2 {
+                height: auto;
+                @include flex (column, center, center);
+                margin-bottom: 0px;
+                .foto1, .foto2 {
+                    display: none;
+                }
+                .curso1-texto {
+                    @include medidas (100%, auto);
+                    @include flex (column, center, center);
+                    h4 {
+                        padding: 5px 20px 10px 20px;
+                        font-size: 16px;
+                    }
+                    p {
+                        padding: 10px 20px 5px 20px;
+                        font-size: 12px;
+                        line-height: 2;
+                        text-align: center;
+                    }
+                }
+                .curso2-texto {
+                    @include medidas (100%, auto);
+                    @include flex (column, center, center);
+                    h4 {
+                        padding: 20px 20px 10px 20px;
+                        font-size: 16px;
+                    }
+                    p {
+                        color: $color-secundario;
+                        padding: 10px 20px 5px 20px;
+                        font-size: 12px;
+                        line-height: 2;
+                        text-align: center;
+                    }
+                }
+                .btn-dest {
+                    @include flex (row, center, center);
+                    padding: 20px;
+                    a {
+                        @include title (unset, center, 10px, $tipografia-principal, normal, 12px);
+                        text-decoration: none;
+                        color: $color-secundario;
+                        background-color: $color-boton;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .curso2 {
+                background-color: $color-principal;
+            }
+        }    
+        .reviews {
+            background-color: $color-secundario;
+            padding-bottom: 10px;
+            h3 {
+                font-size: 18px;
+                padding: 30px 30px 10px 30px;
+                color: $color-principal;
+            }
+            .reseñas {
+                .opinion1, .opinion2 {
+                    h4 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 12px;
+                        line-height: 2;
+                    }
+                    .op1, .op2 {
+                        @include medidas (150px, 150px);
+                    }
+                    .opinion1-texto, .opinion2-texto {
+                        background-color: $color-principal;
+                        border-radius: 20px;
+                        @include medidas (210px, auto);
+                    }
+                }
+                .opinion3, .opinion4 {
+                    display: none;
+                }
+            }
+        }    
+        .material-mobile {
+            display: flex;
+            h4 {
+                @include title (unset, center, 5px 20px 10px 20px, $tipografia-secundaria, bold, 16px);
+                margin-top: 10px;
+                color: $color-secundario;
+            }
+            p {
+                @include title (unset, center, 5px 20px 10px 20px, $tipografia-principal, normal, 12px);
+                margin-bottom: 0px;
+                line-height: 2;
+            }        
+            .btn-dest {
+                @include flex (row, center, center);
+                padding: 20px;
+                a {
+                    @include title (unset, center, 10px, $tipografia-principal, normal, 12px);
+                    text-decoration: none;
+                    color: $color-secundario;
+                    background-color: $color-boton;
+                    border-radius: 10px;
+                }
+            }
+        }        
+        .contacto-index {
+            h3 {
+                font-size: 18px;
+            }
+            .caja-contacto {
+                @include medidas (100%, auto);
+                padding-bottom: 10px;
+                .row1, .row2, .row3, .row4 {
+                    flex-flow: column;
+                    .email-input, .tel-input, .name-input, .lastname-input, .options {
+                        height: 25px;
+                    }
+                    .options {
+                        padding: 4px;
+                    }
+                    .name, .name-input, .mail, .email-input {
+                        margin-right: 0px;
+                    }
+                    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                        font-size: 12px;
+                        width: 90vw;
+                    }
+                }
+                .btn-input {
+                    font-size: 12px;
+                }
+            }
+        }    
+        .sobre-mi {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 1fr 0.4fr;
+            grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            ;
+            margin-bottom: 0px;
+            .item1 {
+                font-size: 20px;
+            }            
+            .item2 {
+                grid-area: item2;
+            }            
+            .item3 {
+                grid-area: item3;
+            }            
+            .item2, .item3 {
+                padding: 20px 30px;
+                font-size: 12px;
+                text-align: justify;
+                line-height: 2;
+            }            
+            .letter {
+                font-size: 20px;
+            }            
+            .item4 {
+                display: none;
+            }
+        }    
+        .servicios {
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                padding: 10px 25px 5px;
+                margin-top: 0px;
+                font-size: 12px;
+                line-height: 2;
+            }
+            .servicios-caja {
+                h3 {
+                    font-size: 18px;
+                }
+                .servicios-fotos {
+                    figure {
+                        @include medidas (290px, 290px);
+                        &:hover > .capa h3 {
+                            margin-top: 30px;
+                        }
+                        &:hover > .capa2 h3 {
+                            margin-top: 40px;
+                        }
+                        .capa {
+                            h3 {
+                                padding: 20px 50px;
+                                font-size: 20px;
+                            }
+                            p {
+                                font-size: 16px;
+                                max-width: 250px;
+                            }
+                        }
+                        .capa2 {
+                            h3 {
+                                font-size: 26px;
+                                padding: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+        .para-vos {
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                padding: 10px 20px 20px;
+                font-size: 12px;
+                line-height: 2;
+            }
+            .videos {
+                width: 100vw;
+                flex-flow: column wrap;
+                align-content: center;
+                justify-content: center;
+                gap: 20px;
+                .video {
+                    width: 290px;
+                }
+            }
+        }        
+        .galeria {
+            h2 {
+                font-size: 18px;
+            }
+            .fotos-galeria {
+                flex-flow: row wrap;
+                align-content: center;
+                gap: 15px;
+                margin-top: 0px;
+                margin-bottom: 15px;
+                .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+                    @include medidas (290px, 490px);
+                }
+            }
+        }    
+        .contacto {
+            h2 {
+                font-size: 18px;
+            }
+            .fb-contacto, .ig-contacto, .icono-mail {
+                @include medidas (25px, 25px);
+            }
+            .mail-contacto p {
+                font-size: 12px;
+                padding: 20px 10px;
+            }
+            .linea-contacto {
+                @include medidas (75vw, 3px);
+            }
+            p {
+                padding: 10px 20px;
+                font-size: 12px;
+                line-height: 2;
+            }
+            .row1, .row2, .row3, .row4 {
+                flex-flow: column;
+                .email-input, .tel-input, .name-input, .lastname-input, .options {
+                    height: 25px;
+                }
+                .options {
+                    padding: 4px;
+                }
+                .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+                font-size: 12px;
+                width: 90vw;
+                }
+            }
+            .btn-input {
+                font-size: 12px;
+            }
+        }    
+        footer {
+            padding-bottom: 10px;
+            .redes-footer {
+                height: auto;
+                padding: 20px 0px 10px 0px;
+                gap: 10px;
+                .fb-footer, .ig-footer {
+                    @include medidas (30px, 30px);
+                }
+                .lineas {
+                    width: 30vw;
+                }
+            }        
+            .logo-footer {
+                width: 100px;
+            }        
+            .footer-texto {
+                h2, h3 {
+                    font-size: 10px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

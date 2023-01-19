@@ -1,0 +1,2316 @@
+/* 
+#FB2576
+#000000
+#FFE15D
+#FFFFFF
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand&display=swap');
+
+@font-face {
+    font-family: 'Playlist';
+    src: local('Playlist Script'), local('Playlist-Script'),
+        url('../fonts/Playlist-Script.woff2') format('woff2'),
+        url('../fonts/Playlist-Script.woff') format('woff'),
+        url('../fonts/Playlist-Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1.2fr 0.1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* ---------------------------- header --------------------------- */
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-desktop {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 6fr 1fr;
+    grid-template-rows: 150px;
+    grid-template-areas: 
+    "logo nav redes";
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-logo {
+    width: 250px;
+    height: auto;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 80px;
+}
+
+.navbar li {
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.navbar li:hover {    
+    transform:scale(1.1);
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.navbar li a:hover{
+    font-weight: bold;
+    background-color: #FB2576;
+    border-radius: 30px;
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fb, .ig {
+    width: 50px;
+    height: 50px;
+}
+
+/* ---------------------------- banner ---------------------------- */
+.banner {
+    width: 100%;
+    height: 950px;
+    background-image: url(../assets/img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+}
+
+.banner-texto {
+    display: grid;
+    width: 30%;
+    padding: 50px;
+    font-family: 'Playlist';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 65px;
+    text-align: center;
+    justify-self: end;
+}
+
+/* ---------------------------- company ---------------------------- */
+.company {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mision img, .vision img, .valores img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about1, .about2, .about3 {
+    width: 640px;
+    height: 650px;
+}
+
+.about1 h2, .about2 h2, .about3 h2 {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+.about1 p, .about2 p, .about3 p {
+    padding: 50px;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* ---------------------------- cursos destacados ---------------------------- */
+
+.destacados {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.destacados h3 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.curso1, .curso2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.foto1 {
+    width: 400px;
+    height: 400px;
+    border-radius: 35px 0px 35px 0px;
+    order: 3;
+    background-image: url(../assets/img/coaching.jpg);
+    background-size: 130%;
+    background-position: bottom;
+}
+
+.curso1-texto {
+    width: 70%;
+    height: auto;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.foto2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 35px 0px 35px 0px;
+    background-image: url(../assets/img/manicuria-inicial.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.curso2-texto {
+    width: 70%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.curso1-texto p, .curso2-texto p {
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 2;
+}
+
+.curso1-texto h4, .curso2-texto h4 {
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.curso1-texto a, .curso2-texto a {
+    text-decoration: none;
+    color: #FB2576;
+}
+
+.btn-dest {
+    display: none;
+}
+
+/* ---------------------------- reseñas ---------------------------- */
+
+.reviews {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.reviews h3 {
+    width: 100%;
+    padding: 50px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.reseñas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.opinion1, .opinion2, .opinion3, .opinion4 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.op1, .op2, .op3, .op4 {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url(../assets/img/avatar1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.op1 {
+    background-image: url(../assets/img/avatar1.jpg);
+}
+
+.op2 {
+    background-image: url(../assets/img/avatar2.jpg);
+}
+
+.op3 {
+    background-image: url(../assets/img/avatar3.jpg);
+}
+
+.op4 {
+    background-image: url(../assets/img/avatar4.jpg);
+}
+
+.opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+    width: 480px;
+    height: 590px;
+    text-align: center;
+}
+
+.opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
+    padding: 10px 10px 5px 10px;
+    margin-top: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 2;
+}
+
+/* ---------------------------- material-mobile ---------------------------- */
+
+.material-mobile { /*sólo en vista mobile*/
+    display: none;
+}
+
+/* ---------------------------- contacto-index ---------------------------- */
+.contacto-index {
+    width: 100%;
+    height: auto;
+    background-color: #D7D2D2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.contacto-index h3 {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.caja-contacto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    flex-flow: row;
+}
+
+.name, .name-input, .lastname, .lastname-input, .mail, .email-input, .tel, .tel-input, .motivo, .options, .mensaje, .mensaje-input {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 5px;
+}
+
+.name, .name-input, .mail, .email-input {
+    margin-right: 5px;
+}
+
+.email-input, .tel-input, .name-input, .lastname-input, .options {
+    width: 45vw;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.options, .mensaje-input {
+    width: 90vw;
+}
+
+.mensaje-input {
+    margin-bottom: 0;
+    resize: none;
+}
+
+.options {
+    padding: 7px;
+}
+
+.btn-input {
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+    padding: 5px;
+}
+
+.name, .lastname, .mail, .tel, .motivo, .mensaje, .btn-input {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+}
+
+.name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+    font-size: 28px;
+}
+
+/* -------------------------------------------- SOBRE MI -------------------------------------------- */
+
+.sobre-mi {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(3);
+    grid-template-areas:
+    "item1 item1"
+    "item2 item4"
+    "item3 item4"
+    ;
+    margin-bottom: 25px;
+}
+
+.item1 {
+    grid-area: item1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item2, .item3 {
+    padding: 20px 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.letter {
+    font-size: 34px;
+}
+
+.item4 {
+    width: 950px;
+    grid-area: item4;
+    display: grid;
+    align-content: center;
+    margin-right: 50px;
+    background-image: url(../assets/img/sobre-mi.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px 0px 200px 0px;
+}
+
+/* -------------------------------------------- SERVICIOS -------------------------------------------- */
+
+.servicios {
+    width: 100%;
+    height: auto;
+}
+
+.servicios h2 {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.servicios p {
+    width: 100%;
+    height: auto;
+    padding: 10px 50px 10px;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.servicios-caja {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.servicios-caja h3 {
+    width: 100%;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.servicios-fotos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-fotos figure {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.servicios-fotos figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.servicios-fotos figure .capa, figure .capa2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #FB2576;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.servicios-fotos figure .capa2 {
+    background: #000000;
+}
+
+.servicios-fotos figure:hover > .capa, figure:hover > .capa2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.servicios-fotos figure:hover > .capa h3 {
+    margin-top: 10px;
+}
+
+.servicios-fotos figure:hover > .capa2 h3 {
+    margin-top: 150px;
+}
+
+.servicios-fotos figure .capa h3, figure .capa2 h3 {
+    color: #000000;
+    font-weight: bold;
+    transition: all 500ms ease-out;
+}
+
+.servicios-fotos figure .capa2 h3 {
+    color: #FB2576;
+}
+
+.servicios-fotos figure .capa p {
+    color: #000000;
+    font-size: 26px;
+    line-height: 2;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    transition: all 500ms ease-out;
+}
+
+.capa h3, .capa2 h3 {    
+    padding: 50px;
+}
+
+.capa p {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* -------------------------------------------- PARA VOS -------------------------------------------- */
+
+.para-vos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.para-vos h2 {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.para-vos p {
+    width: 100%;
+    height: auto;
+    padding: 10px 50px 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.videos {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.video {
+    width: 500px;
+    height: auto;
+}
+
+/* -------------------------------------------- GALERIA -------------------------------------------- */
+
+.galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.galeria h2 {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.fotos-galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+    width: 700px;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url(../assets/img/foto-galeria1.jpg);
+}
+
+.img2 {
+    background-image: url(../assets/img/foto-galeria2.jpg);
+}
+
+.img3 {
+    background-image: url(../assets/img/foto-galeria3.jpg);
+}
+
+.img4 {
+    background-image: url(../assets/img/foto-galeria4.jpg);
+}
+
+.img5 {
+    background-image: url(../assets/img/foto-galeria5.jpg);
+}
+
+.img6 {
+    background-image: url(../assets/img/foto-galeria6.jpg);
+}
+
+.img7 {
+    background-image: url(../assets/img/foto-galeria7.jpg);
+}
+
+.img8 {
+    background-image: url(../assets/img/foto-galeria8.jpg);
+}
+
+.img9 {
+    background-image: url(../assets/img/foto-galeria9.jpg);
+}
+
+.img10 {
+    background-image: url(../assets/img/foto-galeria10.jpg);
+}
+
+.img11 {
+    background-image: url(../assets/img/foto-galeria11.jpg);
+}
+
+.img12 {
+    background-image: url(../assets/img/foto-galeria12.jpg);
+}
+
+/* ---------------------------- CONTACTO -------------------------- */
+
+.contacto {
+    width: 100%;
+    height: auto;
+    background-color: #D7D2D2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.contacto h2 {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.contacto p {
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.fb-contacto, .ig-contacto, .icono-mail {
+    width: 50px;
+    height: 50px;
+}
+
+.mail-contacto {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.mail-contacto p {
+    padding: 15px;
+    font-size: 28px;
+}
+.linea-contacto {
+    background-color: #000000;
+    width: 45vw;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caja-contacto2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------- footer ---------------------------- */
+footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    background-color: #000000;
+}
+
+.redes-footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.fb-footer, .ig-footer {
+    width: 70px;
+    height: 70px;
+}
+
+.lineas {
+    background-color: #FFFFFF;
+    width: 35vw;
+    height: 1px;
+}
+
+.logo-footer {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.footer-texto h2, .footer-texto h3 {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------- responsive ------------------------------------------- */
+@media (max-width: 1999px){
+    .container {
+        grid-template-rows:  100px 1fr 0.05fr;
+        ;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        grid-template-rows: 100px;
+    }
+    
+    .foto-logo {
+        width: 180px;
+    }
+    
+    .navbar {
+        gap: 50px;
+    }
+    
+    .navbar li a {
+        font-size: 24px;
+    }
+        
+    .fb, .ig {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .banner {
+        height: 750px;
+    }
+        
+    .mision img, .vision img, .valores img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about1, .about2, .about3 {
+        width: 380px;
+        height: 380px;
+    }
+    
+    .about1 h2, .about2 h2, .about3 h2 {
+        font-size: 28px;
+    }
+    
+    .about1 p, .about2 p, .about3 p {
+        font-size: 22px;
+        line-height: 1.5;
+        padding: 0px 10px;
+    }
+    
+    .destacados h3 {
+        font-size: 28px;
+    }
+        
+    .foto1, .foto2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .curso1, .curso2 {
+        margin-bottom: 40px;
+    }
+    
+    .curso1-texto, .curso2-texto {
+        width: 60%;
+        height: 300px;
+        line-height: 1.5;
+    }
+    
+    .curso1-texto p, .curso2-texto p {
+        font-size: 20px;
+    }
+    
+    .curso1-texto h4, .curso2-texto h4 {
+        font-size: 26px;
+    }
+    
+    .reviews h3 {
+        padding: 50px;
+        font-size: 28px;
+    }
+    
+    .op1, .op2, .op3, .op4 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+        width: 300px;
+        height: 380px;
+    }
+    
+    .opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
+        font-size: 26px;
+    }
+        
+    .contacto-index h3 {
+        padding: 50px;
+        font-size: 28px;
+    }
+        
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        height: 40px;
+    }
+    
+    .btn-input, .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+        font-size: 20px;
+    }
+    
+    .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input, .options {
+        padding: 5px;
+    }
+    
+    .item1 {
+        font-size: 32px;
+    }
+
+    .item2, .item3 {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .item4 {
+        width: 600px;
+    }
+
+    .letter {
+        font-size: 28px;
+    }
+        
+    .servicios h2 {
+        font-size: 32px;
+    }
+
+    .servicios-caja {
+        margin-bottom: 50px;
+    }
+    
+    .servicios-caja h3 {
+        font-size: 26px;
+    }
+    
+    .servicios p {
+        padding: 10px 100px 10px;
+        font-size: 18px;
+        line-height: 2;
+    }
+    
+    .servicios-fotos figure {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 5px;
+    }
+    
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 40px;
+    }
+    
+    .servicios-fotos figure .capa p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+
+    .capa h3 {
+        padding: 25px 50px;
+    }
+
+    .capa p {
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+    }
+    
+    .para-vos h2 {
+        font-size: 32px;
+    }
+    
+    .para-vos p {
+        padding: 10px 100px 50px;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .video {
+        width: 400px;
+    }
+
+    .contacto h2 {
+        font-size: 32px;
+    }
+    
+    .contacto p {
+        padding: 10px 70px;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .options {
+        padding: 7px;
+    }
+    
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .mail-contacto p {
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+}
+
+/* ------------------------------------------ responsive ------------------------------------------ */
+@media (max-width: 1439px) {
+    .container {
+        grid-template-rows:  80px 1fr 0.05fr;
+    }
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        grid-template-rows: 80px;
+    }
+
+    .logo {
+        align-items: flex-end;
+    }
+
+    .foto-logo {
+        width: 150px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+
+    .navbar li a {
+        font-size: 18px;
+    }
+
+    .fb, .ig {
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner {
+        height: 550px;
+    }
+
+    .banner-texto {
+        font-size: 45px;
+    }
+
+    .mision img, .vision img, .valores img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about1, .about2, .about3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about1 h2, .about2 h2, .about3 h2 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .about1 p, .about2 p, .about3 p {
+        padding: 10px 20px 10px 20px;
+        font-size: 14px;
+    }
+
+    .destacados h3 {
+        font-size: 24px;
+        padding: 30px;
+    }
+
+    .curso1, .curso2 {
+        margin-bottom: 20px;
+    }
+
+    .foto1, .foto2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .curso1-texto, .curso2-texto {
+        width: 800px;
+        height: 200px;
+    }
+
+    .curso1-texto h4, .curso2-texto h4 {
+        font-size: 20px;
+    }
+
+    .curso1-texto p, .curso2-texto p {
+        font-size: 14px;
+    }
+
+    .reviews h3 {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .op1, .op2, .op3, .op4 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .opinion1-texto, .opinion2-texto, .opinion3-texto, .opinion4-texto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .opinion1 p, .opinion2 p, .opinion3 p, .opinion4 p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .opinion1 h4, .opinion2 h4, .opinion3 h4, .opinion4 h4 {
+        font-size: 20px;
+    }
+
+    .contacto-index h3 {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        height: 30px;
+    }
+
+    .options, .mensaje-input {
+        width: 90vw;
+    }
+
+    .options {
+        padding: 4px;
+    }
+
+    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+        font-size: 14px;
+    }
+
+    .sobre-mi {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .item1 {
+        padding: 30px 20px 50px;
+        font-size: 30px;
+    }
+
+    .item2, .item3 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .letter {
+        font-size: 26px;
+    }
+
+    .item4 {
+        width: 600px;
+    }
+
+    .servicios h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .servicios p {
+        font-size: 14px;
+    }
+
+    .servicios-caja {
+        margin-bottom: 35px;
+    }
+
+    .servicios-caja h3 {
+        font-size: 24px;
+    }
+
+    .servicios-fotos figure {
+        height: 250px;
+        width: 250px;
+    }
+
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 0;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 30px;
+    }
+
+    .servicios-fotos figure .capa p {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 200px;
+    }
+
+    .capa h3 {    
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 50px 20px;
+    }
+
+    .para-vos h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .para-vos p {
+        font-size: 14px;
+    }
+
+    .videos {
+        margin-bottom: 30px;
+    }
+
+    .video {
+        width: 300px;
+    }
+
+    .galeria h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+        width: 400px;
+        height: 600px;
+    }
+
+    .contacto h2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .contacto p {
+        padding: 10px 50px;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mail-contacto p {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .caja-contacto2 {
+        margin-bottom: 30px;
+    }
+
+    .fb-footer, .ig-footer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-footer {
+        width: 150px;
+    }
+
+    .footer-texto h2, .footer-texto h3 {
+        font-size: 12px;
+    }
+}
+
+/* ------------------------------------------ responsive ------------------------------------------ */
+@media (max-width: 1199px) {
+    
+    .banner-texto {
+        width: 35%;
+    }
+    
+    .about1, .about2, .about3 {
+        width: 300px;
+        height: 310px;
+    }
+    
+    .about1 p, .about2 p, .about3 p {
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    .destacados h3 {
+        font-size: 26px;
+    }
+        
+    .foto1, .foto2 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .curso1-texto, .curso2-texto  {
+        width: 600px;
+        height: 300px;
+    }
+    
+    .curso1-texto p, .curso2-texto p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+    .curso1-texto h4, .curso2-texto h4 {
+        font-size: 22px;
+    }
+    
+    .reviews h3 {
+        font-size: 26px;
+    }
+
+    .opinion4 {
+        display: none;
+    }
+    
+    .op1, .op2, .op3 {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .opinion1-texto, .opinion2-texto, .opinion3-texto {
+        width: 330px;
+        height: 320px;
+    }
+    
+    .opinion1 p, .opinion2 p, .opinion3 p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+    .opinion1 h4, .opinion2 h4, .opinion3 h4 {
+        font-size: 22px;
+    }
+    
+    .material-mobile {
+        display: none;
+    }
+    
+    .contacto-index h3 {
+        font-size: 26px;
+    }
+    
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        width: 45vw;
+        height: 35px;
+    }
+    
+    .options, .mensaje-input {
+        width: 90vw;
+    }
+    
+    .options {
+        padding: 7px;
+    }
+    
+    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+        font-size: 16px;
+    }
+    
+    .sobre-mi {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .item2, .item3 {
+        font-size: 16px;
+        line-height: 2;
+        text-align: justify;
+    }
+    
+    .letter {
+        font-size: 28px;
+    }
+    
+    .item4 {
+        width: 500px;
+        margin-right: 40px;
+    }
+    
+    .servicios p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+    .servicios-caja h3 {
+        font-size: 26px;
+    }
+    
+    .servicios-fotos {
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+    
+    .servicios-fotos figure {
+        height: 300px;
+        width: 300px;
+    }
+
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 40px;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 50px;
+    }
+    
+    .servicios-fotos figure .capa p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+
+    .capa h3, .capa2 h3 {    
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 50px;
+    }
+    
+    .para-vos p {
+        font-size: 16px;
+        line-height: 2;
+    }
+    
+    .video {
+        width: 350px;
+    }
+    
+    .contacto p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .mail-contacto p {
+        font-size: 16px;
+    }
+    .linea-contacto {
+        width: 50vw;
+    }
+}
+
+/* ------------------------------------------ responsive ------------------------------------------ */
+@media (max-width: 1023px) {
+    .container {
+        grid-template-rows: 70px 1fr 0.05fr;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+    
+    .menu-mobile label img {
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .menu-mobile label img:hover {
+        transform: scale(1.2);
+    }
+    
+    .menu-mobile {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo-marca {
+        height: 70px;
+        justify-self: center;
+    }
+    
+    .menu-mobile .logo-mobile {
+        height: 70px;
+    }
+    
+    .menu-mobile .check-btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 12px;
+    }
+    
+    .menu-mobile .icono-menu {
+        width: 24px;
+        height: 24px;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        background-color: #FF577F;
+        margin-top: 70px;
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        list-style: none;
+        position: fixed;
+        transition: all 0.5s;
+        left: -100%;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    .mobile-navbar li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        box-shadow: 6px 6px 30px 3px rgba(0,0,0,0.75);
+        transition: all 0.5s;
+    }
+    
+    .mobile-navbar li:hover{
+        background-color: #FB2576;
+        transform:scale(1.1);
+    }
+    
+    .mobile-navbar li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    
+    .mobile-navbar li a:hover{
+        font-weight: bold;
+    }
+    
+    .banner {
+        height: 480px;
+    }
+    
+    .banner-texto {
+        width: 35%;
+        padding: 40px;
+        font-size: 35px;
+    }
+
+    .company {
+        padding-bottom: 20px;
+    }
+
+    .mision img, .vision img, .valores img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about1, .about2, .about3 {
+        width: 220px;
+        height: 270px;
+    }
+
+    .about1 h2, .about2 h2, .about3 h2 {
+        font-size: 18px;
+    }
+
+    .about1 p, .about2 p, .about3 p {
+        font-size: 12px;
+    }
+    
+    .destacados h3 {
+        font-size: 20px;
+    }
+    
+    .curso1-texto, .curso2-texto {
+        width: 60%;
+        height: auto;
+    }
+
+    .foto1, .foto2 {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+        
+    .curso1-texto p, .curso2-texto p {
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .curso1-texto h4, .curso2-texto h4 {
+        font-size: 16px;
+    }
+        
+    .reviews h3 {
+        font-size: 20px;
+    }
+
+    .opinion4 {
+        display: none;
+    }
+
+    .op1, .op2, .op3 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .opinion1-texto, .opinion2-texto, .opinion3-texto {
+        width: 250px;
+        height: 240px;
+    }
+    
+    .opinion1 p, .opinion2 p, .opinion3 p {
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .opinion1 h4, .opinion2 h4, .opinion3 h4 {
+        font-size: 18px;
+    }
+    
+    .contacto-index h3 {
+        font-size: 20px;
+    }    
+
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        height: 25px;
+    }
+
+    .options {
+        padding: 4px;
+    }
+
+    .name, .lastname, .mail, .tel, .motivo, .mensaje, .options, .btn-input, .name-input, .lastname-input, .email-input, .tel-input,.mensaje-input {
+        font-size: 12px;
+    }
+        
+    .sobre-mi {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item1 item1"
+        "item2 item2"
+        "item3 item4"
+        ;
+    }
+    
+    .item1 {
+        font-size: 28px;
+    }
+    
+    .item2, .item3 {
+        font-size: 12px;
+        text-align: justify;
+    }
+    
+    .item4 {
+        width: 350px;
+        justify-self: center;
+        background-position: top;
+    }
+
+    .servicios h2 {
+        font-size: 20px;
+    }
+
+    .servicios p {
+        font-size: 12px;
+    }
+
+    .servicios.caja h3 {
+        padding: 30px;
+        font-size: 20px;
+    }
+    
+    .servicios-fotos {
+        flex-flow: row wrap;
+        gap: 30px;
+    }
+    
+    .servicios-fotos figure {
+        height: 250px;
+        width: 250px;
+    }
+
+    .servicios-fotos figure:hover > .capa h3 {
+        margin-top: 10px;
+    }
+
+    .servicios-fotos figure:hover > .capa2 h3 {
+        margin-top: 40px;
+    }
+    
+    .servicios-fotos figure .capa p {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+
+    .capa h3 {
+        padding: 20px;
+    }
+
+    .capa2 h3 {    
+        padding: 30px;
+    }
+    
+    .para-vos h2 {
+        font-size: 20px;
+    }
+    
+    .para-vos p {
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .videos {
+        flex-flow: row wrap;
+    }
+    
+    .galeria h2 {
+        font-size: 20px;
+    }
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+        width: 350px;
+        height: 550px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .contacto p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 25px;
+        height: 25px;
+    }
+            
+    .fb-footer, .ig-footer {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ------------------------------------------ responsive ------------------------------------------ */
+@media (max-width:767px) {
+    .container {
+        grid-template-rows: 50px 1.6fr 0.05fr;
+    }
+
+    .menu-desktop {
+        display: none;
+    }   
+    
+    .menu-mobile {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo-marca {
+        height: 50px;
+        justify-self: center;
+    }
+    
+    .menu-mobile .logo-mobile {
+        height: 50px;
+    }
+    
+    .menu-mobile .check-btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 12px;
+    }
+    
+    .menu-mobile .icono-menu {
+        width: 18px;
+        height: 18px;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        background-color: #FF577F;
+        margin-top: 50px;
+        width: 100%;
+        height: 450px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        list-style: none;
+        position: fixed;
+        transition: all 0.5s;
+        left: -100%;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    .mobile-navbar li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        box-shadow: 6px 6px 30px 3px rgba(0,0,0,0.75);
+        transition: all 0.5s;
+    }
+    
+    .mobile-navbar li:hover{
+        background-color: #FB2576;
+        transform:scale(1.1);
+    }
+    
+    .mobile-navbar li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .mobile-navbar li a:hover{
+        font-weight: bold;
+    }
+
+    .banner {
+        height: 250px;
+    }
+    
+    .banner-texto {
+        width: 30%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .company {
+        display: none;
+    }
+
+    .destacados {
+        padding-bottom: 0px;
+    }
+    
+    .destacados h3 {
+        font-size: 18px;
+        padding: 30px 30px 10px 30px;
+    }
+    
+    .curso1, .curso2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .curso2 {
+        background-color: #FFFFFF;
+    }
+    
+    .foto1 {
+        display: none;
+    }
+    
+    .curso1-texto, .curso2-texto {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foto2 {
+        display: none;
+    }
+        
+    .curso1-texto h4, .curso2-texto h4 {
+        padding: 5px 20px 10px 20px;
+        font-size: 16px;
+    }
+
+    .curso2-texto h4 {
+        padding: 20px 20px 10px 20px;
+    }
+    
+    .curso1-texto p, .curso2-texto p {
+        padding: 10px 20px 5px 20px;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .curso2-texto p {
+        color: #000000;
+    }
+
+    .btn-dest {
+        display: flex;
+        flex-flow: row;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .btn-dest a {
+        text-decoration: none;
+        color: #000000;
+        background-color: #FFE15D;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .reviews {
+        background-color: #000000;
+        padding-bottom: 10px;
+    }
+    
+    .reviews h3 {
+        font-size: 18px;
+        padding: 30px 30px 10px 30px;
+        color: #ffffff;
+    }
+
+    .opinion3, .opinion4 {
+        display: none;
+    }
+
+    .op1, .op2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .opinion1-texto, .opinion2-texto {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        width: 210px;
+        height: auto;
+    }
+
+    .opinion1 h4, .opinion2 h4 {
+        font-size: 16px;
+    }
+
+    .opinion1 p, .opinion2 p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .material-mobile {
+        display: flex;
+    }
+
+    .material-mobile h4 {
+        padding: 5px 20px 10px 20px;
+        font-size: 16px;
+        margin-top: 10px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .material-mobile p {        
+        padding: 5px 20px 10px 20px;
+        margin-bottom: 0px;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .contacto-index h3 {
+        font-size: 18px;
+    }
+    
+    .caja-contacto {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    
+    .row1, .row2, .row3, .row4 {
+        flex-flow: column;
+    }
+        
+    .name, .name-input, .mail, .email-input {
+        margin-right: 0px;
+    }
+    
+    .email-input, .tel-input, .name-input, .lastname-input, .options {
+        width: 90vw;
+    }
+    
+    .options, .mensaje-input {
+        width: 90vw;
+    }
+            
+    .name, .lastname, .mail, .tel, .motivo, .mensaje {
+        font-size: 12px;
+        width: 90vw;
+    }
+
+    .sobre-mi {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.4fr;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        ;
+        margin-bottom: 0px;
+    }
+    
+    .item1 {
+        font-size: 20px;
+    }
+    
+    .item2 {
+        grid-area: item2;
+    }
+    
+    .item3 {
+        grid-area: item3;
+    }
+    
+    .item2, .item3 {
+        padding: 20px 30px;
+        font-size: 12px;
+        text-align: justify;
+        line-height: 2;
+    }
+    
+    .letter {
+        font-size: 20px;
+    }
+    
+    .item4 {
+        display: none;
+    }
+    
+    .servicios h2 {
+        font-size: 18px;
+    }
+    
+    .servicios h3 {
+        padding: 20px;
+        font-size: 16px;
+    }
+        
+    .servicios p {
+        padding: 10px 25px 5px;
+        margin-top: 0px;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .servicios-fotos {
+        height: auto;
+        flex-flow: column;
+        margin-bottom: 45px;
+    }
+        
+    .servicios-fotos figure .capa h3, figure .capa2 h3 {
+        font-size: 20px;
+    }
+    
+    .capa h3 {
+        padding: 20px 50px;
+    }
+    
+    .capa2 h3 {
+        padding: 50px;
+    }
+    
+    .para-vos h2 {
+        font-size: 18px;
+    }
+    
+    .para-vos p {
+        padding: 10px 20px 20px;
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .videos {
+        width: 100vw;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .video {
+        width: 290px;
+    }
+    
+    .galeria h2 {
+        font-size: 18px;
+    }
+    
+    .fotos-galeria {
+        flex-flow: column wrap;
+        align-content: center;
+        gap: 15px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+        width: 290px;
+        height: 490px;
+    }
+
+    .contacto h2 {
+        font-size: 18px;
+    }
+    
+    .contacto p {
+        padding: 10px 20px;
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .fb-contacto, .ig-contacto, .icono-mail {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .mail-contacto p {
+        padding: 20px 10px;
+    }
+
+    .linea-contacto {
+        width: 75vw;
+        height: 3px;
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+
+    .redes-footer {
+        height: auto;
+        padding: 20px 0px 10px 0px;
+        gap: 10px;
+    }
+
+    .fb-footer, .ig-footer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lineas {
+        width: 30vw;
+    }
+
+    .logo-footer {
+        width: 100px;
+    }
+
+    .footer-texto h2, .footer-texto h3 {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+}
