@@ -1,11 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Quicksand&display=swap");
-@font-face {
-  font-family: 'Playlist';
-  src: local("Playlist Script"), local("Playlist-Script"), url("../fonts/Playlist-Script.woff2") format("woff2"), url("../fonts/Playlist-Script.woff") format("woff"), url("../fonts/Playlist-Script.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&family=Quicksand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +108,7 @@
     width: 30%;
     text-align: center;
     padding: 50px;
-    font-family: "Playlist";
+    font-family: "Great Vibes", cursive;
     font-weight: normal;
     font-size: 65px;
     font-style: normal;
@@ -921,8 +915,6 @@ footer {
         height: 30px; }
     .container .banner {
       height: 550px; }
-      .container .banner .banner-texto {
-        font-size: 45px; }
     .container .company .mision img, .container .company .vision img, .container .company .valores img {
       width: 150px;
       height: 150px; }
@@ -1092,7 +1084,7 @@ footer {
     .container .banner {
       height: 550px; }
       .container .banner .banner-texto {
-        width: 40%;
+        width: 35%;
         font-size: 45px; }
     .container .company .mision img, .container .company .vision img, .container .company .valores img {
       width: 150px;
@@ -1320,7 +1312,7 @@ footer {
       .container .banner .banner-texto {
         width: 35%;
         padding: 40px;
-        font-size: 35px; }
+        font-size: 45px; }
     .container .company {
       padding-bottom: 20px; }
       .container .company .mision img, .container .company .vision img, .container .company .valores img {
