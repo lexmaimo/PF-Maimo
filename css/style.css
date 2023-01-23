@@ -15,9 +15,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1.3fr 0.1fr;
-  grid-template-areas: "header"
- "main"
- "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
   .container header {
     grid-area: header; }
   .container main {
@@ -116,7 +114,7 @@
     width: 30%;
     text-align: center;
     padding: 50px;
-    font-family: "Playlist Script";
+    font-family: "Playlist";
     font-weight: normal;
     font-size: 65px;
     font-style: normal;
@@ -377,9 +375,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: repeat(3);
-  grid-template-areas: "item1 item1"
- "item2 item4"
- "item3 item4";
+  grid-template-areas: "item1 item1" "item2 item4" "item3 item4";
   margin-bottom: 25px; }
   .sobre-mi .item1 {
     grid-area: item1;
@@ -1397,9 +1393,7 @@ footer {
       font-size: 12px; }
     .container .sobre-mi {
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "item1 item1"
- "item2 item2"
- "item3 item4"; }
+      grid-template-areas: "item1 item1" "item2 item2" "item3 item4"; }
       .container .sobre-mi .item1 {
         font-size: 28px; }
       .container .sobre-mi .item2, .container .sobre-mi .item3 {
@@ -1714,9 +1708,7 @@ footer {
     .container .sobre-mi {
       grid-template-columns: 1fr;
       grid-template-rows: 0.1fr 1fr 0.4fr;
-      grid-template-areas: "item1"
- "item2"
- "item3";
+      grid-template-areas: "item1" "item2" "item3";
       margin-bottom: 0px; }
       .container .sobre-mi .item1 {
         font-size: 20px; }
