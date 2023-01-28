@@ -83,6 +83,9 @@
           font-weight: bold;
           background-color: #FB2576;
           border-radius: 30px; }
+        .menu-desktop nav .navbar li a#active {
+          font-weight: bold;
+          background-color: #FF577F; }
 
 .menu-desktop .redes {
   grid-area: redes;
